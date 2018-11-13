@@ -9,12 +9,13 @@ if BOARD_NRF51_BEACON
 config BOARD
 	default "nrf51_beacon"
 
-if GPIO_NRF5
+if GPIO_NRFX
 
-config GPIO_NRF5_P0
+config GPIO_NRF_P0
+	bool
 	default y
 
-endif # GPIO_NRF5
+endif # GPIO_NRFX
 
 if UART_NRFX
 
